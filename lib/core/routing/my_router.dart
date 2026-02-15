@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mvvm_app/core/presentation/gold_screen.dart';
 import 'package:mvvm_app/core/presentation/home_screen.dart';
-import 'package:mvvm_app/core/presentation/silver_screen.dart';
 import 'package:mvvm_app/core/routing/routes.dart';
+import 'package:mvvm_app/features/gold/presentation/screens/gold_screen.dart';
+import 'package:mvvm_app/features/silver/presentation/screens/silver_screen.dart';
 
 class MyRouter {
   Route? generateRoute(RouteSettings settings) {

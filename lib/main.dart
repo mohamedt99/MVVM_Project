@@ -3,8 +3,9 @@ import 'package:mvvm_app/core/networking/dio_helper.dart';
 import 'package:mvvm_app/core/routing/my_router.dart';
 import 'package:mvvm_app/core/routing/routes.dart';
 
-void main(){
-  DioHelper.init();
+void main()async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await DioHelper.init();
   runApp(MyApp(myRouter: MyRouter(),));
 }
 
